@@ -1,0 +1,119 @@
+/* Modern Layout with Glassmorphism */
+:root[b-m2echg8qpx] {
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --primary-color: #4f46e5;
+  --text-color: #2d3748;
+}
+
+body[b-m2echg8qpx] {
+  background: linear-gradient(135deg, #a5b4fc, #818cf8);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* Glassmorphism Navbar */
+.navbar[b-m2echg8qpx] {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+a.navbar-brand[b-m2echg8qpx] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+a.navbar-brand:hover[b-m2echg8qpx] {
+  transform: scale(1.05);
+}
+
+a[b-m2echg8qpx] {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+a:hover[b-m2echg8qpx] {
+  color: #635ce0;
+  text-decoration: none;
+}
+
+/* Modern Buttons */
+.btn-primary[b-m2echg8qpx] {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover[b-m2echg8qpx] {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.nav-pills .nav-link.active[b-m2echg8qpx], .nav-pills .show > .nav-link[b-m2echg8qpx] {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Borders and Shadows */
+.border-top[b-m2echg8qpx] {
+  border-top: 1px solid var(--glass-border);
+}
+
+.border-bottom[b-m2echg8qpx] {
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.box-shadow[b-m2echg8qpx] {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Policy Button */
+button.accept-policy[b-m2echg8qpx] {
+  font-size: 0.9rem;
+  line-height: inherit;
+  padding: 0.5rem 1rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button.accept-policy:hover[b-m2echg8qpx] {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Glassmorphism Footer */
+.footer[b-m2echg8qpx] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--glass-border);
+  padding: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Container styles */
+.container[b-m2echg8qpx] {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
