@@ -1,0 +1,119 @@
+﻿/* Modern Layout with Glassmorphism */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --primary-color: #4f46e5;
+  --text-color: #2d3748;
+}
+
+body {
+  background: linear-gradient(135deg, #a5b4fc, #818cf8);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+a.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #635ce0;
+  text-decoration: none;
+}
+
+/* Modern Buttons */
+.btn-primary {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Borders and Shadows */
+.border-top {
+  border-top: 1px solid var(--glass-border);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.box-shadow {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Policy Button */
+button.accept-policy {
+  font-size: 0.9rem;
+  line-height: inherit;
+  padding: 0.5rem 1rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button.accept-policy:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Glassmorphism Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--glass-border);
+  padding: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}

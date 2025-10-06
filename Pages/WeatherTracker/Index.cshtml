@@ -1,0 +1,48 @@
+@page
+@model SideProject_C__.Pages.WeatherTracker.WeatherModel
+
+<div class="container">
+    <div class="weather-container">
+        <h1>Weather Tracker</h1>
+        <div class="weather-card">
+            @if (!string.IsNullOrEmpty(Model.errorMessage))
+            {
+                <div class="alert alert-info">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>API Key Activation Pending</h4>
+                    <p>@Model.errorMessage</p>
+                    <small>Please note: New API keys take 2-4 hours to activate. Try again later.</small>
+                </div>
+            }
+            else if (Model.weatherDescription != null)
+            {
+                <div class="weather-info">
+                    <div class="location">
+                        <i class="fas fa-location-dot"></i>
+                        <h2>@Model.city</h2>
+                    </div>
+                    <div class="weather-details">
+                        <div class="temperature">
+                            <i class="fas fa-temperature-high"></i>
+                            <p class="temp">@Model.temperature°C</p>
+                        </div>
+                        <div class="condition">
+                            <i class="fas fa-cloud"></i>
+                            <p class="desc">@Model.weatherDescription</p>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="loading">
+                    <p>Loading weather data...</p>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
